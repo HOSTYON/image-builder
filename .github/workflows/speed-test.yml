@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install speedtest CLI
-        run: apt -y install speedtest-cli
+        run: sudo apt -y install speedtest-cli
 
       - name: Run speedtest CLI
         run: speedtest-cli --secure
