@@ -1,0 +1,13 @@
+name: Speed test
+
+on: workflow_dispatch
+
+jobs:
+  speed-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install speedtest CLI
+        run: apt -y install speedtest-cli
+
+      - name: Run speedtest CLI
+        run: speedtest-cli --secure
